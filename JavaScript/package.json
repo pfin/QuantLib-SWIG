@@ -1,0 +1,35 @@
+{
+  "name": "quantlib",
+  "version": "1.39.0-dev",
+  "description": "JavaScript bindings for QuantLib quantitative finance library",
+  "main": "index.js",
+  "scripts": {
+    "configure": "node-gyp configure",
+    "build": "node-gyp build",
+    "rebuild": "node-gyp rebuild",
+    "test": "node test/test.js",
+    "clean": "node-gyp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pfin/QuantLib-SWIG.git"
+  },
+  "keywords": [
+    "quantlib",
+    "finance",
+    "quantitative",
+    "derivatives",
+    "yield-curves",
+    "swig"
+  ],
+  "author": "QuantLib Team",
+  "license": "BSD-3-Clause",
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^7.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.3.1"
+  }
+}
